@@ -1,0 +1,79 @@
+@import "../../styles/variables.scss";
+
+.patient_login{
+    background-color: $off-white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    &_form{
+        width: 500px;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        background-color: $white;
+        padding: 1rem 2rem;
+        border-radius: 15px;
+
+        &_header{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: .5rem;
+            border: 1px solid $grey;
+            border-style: none none solid;
+            padding-bottom: 2rem;
+
+            img{
+                width: 4rem;
+            }
+        }
+
+        &_input{
+            display: flex;
+            flex-direction: column;
+            gap: .2rem;
+            position: relative;
+
+            label{
+                font-weight: 600;
+            }
+            input{
+                padding-left: 2rem;
+            }
+            span{
+                position: absolute;
+                top: 25px;
+                left: 10px;
+                font-size: 1.3rem;
+            }
+        }
+        button{
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .patient_login{
+        &_form{
+            width: 480px;
+        }
+    }
+}
+@media screen and (max-width: 500px) {
+    .patient_login{
+        &_form{
+            width: 380px;
+        }
+    }
+}
+@media screen and (max-width: 400px) {
+    .patient_login{
+        &_form{
+            width: 300px;
+        }
+    }
+}

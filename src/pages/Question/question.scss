@@ -1,0 +1,52 @@
+@import "../../styles/variables.scss";
+
+
+.question{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+
+    &_container{
+        background-image: url("../../assets/question_image.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        padding-top: 10rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        height: 100%;
+
+        &_buttons{
+            z-index: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            padding: 2rem;
+            border-radius: 15px;
+            width: fit-content;
+            background-color: rgba($color: $off-white, $alpha: 0.5);
+
+            button{
+                width: 100%;
+                cursor: pointer;
+            }
+            h2{
+                color: $blue-tertiary;
+                text-shadow: 1px 1px 3px $blue-secondary;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .question{
+        grid-template-columns: 0% 100%;
+        &_container{
+            width: 100%;
+            display: flex;
+        }
+    }
+}
