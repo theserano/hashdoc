@@ -30,7 +30,7 @@
     border-color: $primary-text;
 }
 .blue_btn{
-    background-color: $blue-primary;
+    background-color: $blue-dark;
     color: $white;
     padding: 12px 32px;
     font-weight: 500;
@@ -41,7 +41,7 @@
 }
 .blue_btn:hover{
     background-color: transparent;
-    border-color: $blue-primary;
+    border-color: $blue-dark;
     color: $blue-primary;
 }
 .transparent_btn{

@@ -1,0 +1,64 @@
+@import "../../../styles/variables.scss";
+
+.medicalRecordsPatient_top{
+    padding: 1rem 2rem;
+}
+.medicalRecordsPatient_header{
+    padding: 1rem 2rem;
+}
+
+.medicalRecordsPatient_form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+
+    .medical_form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: .5rem;
+        width: 400px;
+        background-color: $off-white;
+        padding: 2rem;
+        border-radius: 10px;
+
+        &_header{
+            display: flex;
+            flex-direction: column;
+            gap: .5rem;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+        &_name, &_select, &_description{
+            display: flex;
+            flex-direction: column;
+            // gap: .5rem;
+            width: 100%;
+        }
+        &_button{
+            width: 100%;
+        }
+        &_select{
+            select{
+                border-radius: 10px 10px 0px 0px;
+            }
+            &_div{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                padding: .5rem;
+                border: 1px solid $grey;
+
+                span{
+                    width: fit-content;
+                }
+            }
+        }
+    }
+}
