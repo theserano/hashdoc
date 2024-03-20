@@ -213,9 +213,27 @@
     border: 1px solid $grey;
     padding: .5rem;
     border-radius: 10px;
+    color: $secondary-text;
 }
 .input:focus{
     outline-color: $blue-primary;
+}
+.input::placeholder{
+    font-size: .8rem;
+}
+
+
+.custom_select {
+    padding: 0.5rem;
+    font-size: .8rem;
+    color: $grey;
+    border: 1px solid $grey;
+    border-radius: 10px;
+}
+
+.custom_select:hover,
+.custom-select:focus {
+border-color: #999; 
 }
 
 

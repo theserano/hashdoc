@@ -14,3 +14,10 @@
         color: rgb(17, 17, 60);
     }
 }
+@media screen and (max-width: 800px){
+    .logo{
+        p{
+            display: none;
+        }
+    }
+}

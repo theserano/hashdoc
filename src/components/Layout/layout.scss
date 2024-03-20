@@ -1,0 +1,72 @@
+@import "../../styles/variables.scss";
+
+.pageLayout{
+    display: flex;
+
+    &_side{
+        width: 300px;
+        height: 100%;
+        // overflow-x: scroll;
+    }
+    &_main{
+        flex: 1;
+        overflow: scroll;
+    }
+}
+
+.sideNav{
+    background-color: $blue-dark;
+    height: 100vh;
+    display: flex;
+    gap: 7rem;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 2rem;
+
+    &_list{
+        ul{
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            li{
+                .sideNav_links{
+                    display: flex;
+                    gap: 1rem;
+                    padding: .5rem;
+                    border-radius: 5px;
+                    color: #fff;
+                    font-weight: 300;
+                    transition: $transition;
+                }
+                .sideNav_links:hover{
+                    background-color: rgba($color: #fff, $alpha: 0.1);
+                }
+            }
+        }
+    }
+}
+#sideNav .sideNav_list ul li a.active{
+    background-color: rgba($color: #fff, $alpha: 0.1);
+}
+
+@media screen and (max-width: 800px) {
+    .pageLayout{
+        &_side{
+            width: 70px;
+        }
+    }
+    .sideNav{
+        padding: .5rem;
+        &_list{
+            ul{
+                li{
+                    .sideNav_links{
+                        p{
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
