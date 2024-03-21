@@ -4,7 +4,7 @@ import Search from '../../../components/Inputs/Search/Search'
 
 const PatientHome = () => {
   return (
-    <PageLayout patient={true}>
+    <PageLayout>
         <div className='p-4 mt-8'>
             <Search />
         </div>
