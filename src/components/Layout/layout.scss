@@ -15,6 +15,7 @@
 }
 
 .sideNav{
+    z-index: 10;
     background-color: $blue-dark;
     height: 100vh;
     display: flex;
@@ -22,6 +23,7 @@
     flex-direction: column;
     justify-content: flex-start;
     padding: 2rem;
+    position: relative;
 
     &_list{
         ul{
@@ -44,15 +46,33 @@
             }
         }
     }
+    &_icon{
+        font-size: 3rem;
+        z-index: 40;
+        color: #fff;
+        width: 3rem;
+        height: 3rem;
+        border-radius: 50%;
+        box-shadow: 0px 1px 5px $blue-dark, -1px 0px 5px $blue-dark;
+        position: absolute;
+        bottom: 5%;
+        display: none;
+        transition: $transition;
+        background-color: $blue-dark;
+    }
 }
 #sideNav .sideNav_list ul li a.active{
     background-color: rgba($color: #fff, $alpha: 0.1);
+}
+.sideMenu_open{
+    width: 70px;
 }
 
 @media screen and (max-width: 800px) {
     .pageLayout{
         &_side{
-            width: 70px;
+            width: 0px;
+            transition: width 1s ease-in-out;
         }
     }
     .sideNav{
@@ -67,6 +87,9 @@
                     }
                 }
             }
+        }
+        &_icon{
+            display: block;
         }
     }
 }

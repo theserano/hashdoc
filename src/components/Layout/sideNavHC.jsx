@@ -1,12 +1,12 @@
 import React, { useState } from 'react'
 import Logo from '../Logo/Logo'
-import {sideNavItems} from "./data";
+import {sideNavItemsHC} from "./data";
 import Tooltip from '@mui/material/Tooltip';
 import { NavLink } from 'react-router-dom';
 import "./layout.scss"
 import { FaPlusCircle } from "react-icons/fa";
 
-const SideNav = () => {
+const SideNavHC = () => {
 
     const [sideMenu, setSideMenu] = useState(false);
 
@@ -20,7 +20,7 @@ const SideNav = () => {
         <div className="sideNav_list">
             <ul>
                 {
-                    sideNavItems.map(item => (
+                    sideNavItemsHC.map(item => (
                         <li key={item.id}>
                             <Tooltip title={item.title} placement='right'>
                                 <NavLink
@@ -42,4 +42,4 @@ const SideNav = () => {
   )
 }
 
-export default SideNav
+export default SideNavHC

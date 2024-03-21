@@ -26,7 +26,28 @@ export const sideNavItems = [
     {
         id: 3,
         title: "Settings",
-        link: "/settings",
+        link: "/healthcare-settings",
+        icon: settings
+    },
+];
+
+export const sideNavItemsHC = [
+    {
+        id: 0,
+        title: "Patients",
+        link: "/patient-home",
+        icon: dashboard
+    },
+    {
+        id: 1,
+        title: "Appointments",
+        link: "/appointments",
+        icon: appointments
+    },
+    {
+        id: 3,
+        title: "Settings",
+        link: "/healthcare-settings",
         icon: settings
     },
 ];

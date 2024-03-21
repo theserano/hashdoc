@@ -6,6 +6,8 @@ const HealthCareSignup = lazy(() => import("./pages/HealthCareSignUp/HealthCareS
 const PatientSignUp = lazy(() => import("./pages/PatientSignUp/PatientSignUp"));
 const Login = lazy(() => import('./pages/Login/Login'));
 const MedicalRecordsPatient = lazy(() => import('./pages/Patient/MedicalRecords/MedicalRecordsPatient'));
+const HealthcareDashboard = lazy(() => import("./pages/HealthcareProvider/HealthcareDashboard"));
+const PatientHome = lazy(() => import("./pages/Patient/PatientHome/PatientHome"))
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
           <Route path="/health-care-sign-up" element={<HealthCareSignup />} />
           <Route path="/patient-sign-up" element={<PatientSignUp />} />
           <Route path="/patient-medical-record" element={<MedicalRecordsPatient />} />
+          <Route path='/healthcare-dashboard' element={<HealthcareDashboard />} />
+          <Route path='/patient-home' element={<PatientHome />} />
         </Routes>
       </Suspense>
     </Router>

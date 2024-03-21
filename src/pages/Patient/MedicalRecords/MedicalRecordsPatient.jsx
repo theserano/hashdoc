@@ -11,7 +11,7 @@ const MedicalRecordsPatient = () => {
 
   return (
     <>
-        <PageLayout>
+        <PageLayout patient={true}>
 
             <div className="medicalRecordsPatient_top">
                 <div className="medicalRecordsPatient_top_left">
