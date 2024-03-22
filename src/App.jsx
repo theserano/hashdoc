@@ -8,6 +8,7 @@ const Login = lazy(() => import('./pages/Login/Login'));
 const MedicalRecordsPatient = lazy(() => import('./pages/Patient/MedicalRecords/MedicalRecordsPatient'));
 const HealthcareDashboard = lazy(() => import("./pages/HealthcareProvider/HealthcareDashboard"));
 const PatientHome = lazy(() => import("./pages/Patient/PatientHome/PatientHome"))
+const PatientProfile = lazy(() => import("./pages/Patient/PatientProfile/PatientProfile"));
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/patient-medical-record" element={<MedicalRecordsPatient />} />
           <Route path='/healthcare-dashboard' element={<HealthcareDashboard />} />
           <Route path='/patient-home' element={<PatientHome />} />
+          <Route path='/patient-profile' element={<PatientProfile />} />
         </Routes>
       </Suspense>
     </Router>
