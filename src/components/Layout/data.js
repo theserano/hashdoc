@@ -8,13 +8,13 @@ export const sideNavItems = [
     {
         id: 0,
         title: "Dashboard",
-        link: "/dashboard",
+        link: "/patient-profile",
         icon: dashboard
     },
     {
         id: 1,
         title: "My Appointments",
-        link: "/appointments",
+        link: "/healthcare-settings",
         icon: appointments
     },
     {
@@ -26,7 +26,7 @@ export const sideNavItems = [
     {
         id: 3,
         title: "Settings",
-        link: "/healthcare-settings",
+        link: "/",
         icon: settings
     },
 ];
@@ -41,7 +41,7 @@ export const sideNavItemsHC = [
     {
         id: 1,
         title: "Appointments",
-        link: "/appointments",
+        link: "/healthcare-dashboard",
         icon: appointments
     },
     {
